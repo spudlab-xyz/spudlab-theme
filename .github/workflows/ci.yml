@@ -1,0 +1,35 @@
+name: Validate theme
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.131.0"
+          extended: true
+
+      - name: Build example site
+        run: >-
+          hugo
+          --source exampleSite
+          --themesDir ../..
+          --theme spudlab-theme
+          --baseURL https://example.org/
+          --destination public
+          --minify
+          --gc
+          --panicOnWarning
+          --printPathWarnings

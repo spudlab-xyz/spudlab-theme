@@ -2,6 +2,8 @@
 
 A restrained, accessible Hugo theme for open science, research, documentation, and community projects. It uses the [Spudlab brand palette](https://github.com/spudlab-xyz/.github/blob/main/docs/BRAND.md) by default, but its identity and content are configurable so other organisations can reuse it.
 
+[View the example site](https://spudlab-xyz.github.io/spudlab-theme/)
+
 ## Features
 
 - Responsive homepage, section, article, taxonomy, and 404 layouts
@@ -169,3 +171,5 @@ The theme is designed for WCAG-aware use, but site owners remain responsible for
 ## Licence
 
 Licensed under the [Apache License 2.0](LICENSE). The included Spudlab logo remains Spudlab branding; its inclusion does not imply sponsorship, partnership, or endorsement.
+
+Release history is recorded in the [changelog](CHANGELOG.md).

@@ -164,6 +164,8 @@ hugo --source exampleSite --themesDir ../.. --theme spudlab-theme --minify
 
 The repository includes `.github/workflows/pages.yml`, which builds and deploys the example site whenever `main` is updated. Before its first run, select **GitHub Actions** as the source under **Settings → Pages**. The workflow derives the correct Pages URL automatically, including the repository subpath.
 
+Pushing a tag beginning with `v`, such as `v0.1.0`, runs `.github/workflows/release.yml`. The workflow validates the example site and creates a GitHub Release with generated release notes.
+
 ## Accessibility
 
 The theme is designed for WCAG-aware use, but site owners remain responsible for accessible content, meaningful alternative text, heading order, link wording, and verifying custom colour combinations. Do not rely on colour alone to communicate status or meaning.

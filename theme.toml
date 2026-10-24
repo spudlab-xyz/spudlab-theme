@@ -1,0 +1,12 @@
+name = "Spudlab"
+license = "Apache-2.0"
+licenselink = "https://github.com/spudlab-xyz/spudlab-theme/blob/main/LICENSE"
+description = "A clear, accessible Hugo theme for open science, research, and community projects."
+homepage = "https://github.com/spudlab-xyz/spudlab-theme"
+tags = ["accessible", "blog", "documentation", "projects", "responsive", "science"]
+features = ["dark mode", "responsive design", "project cards", "taxonomy support"]
+min_version = "0.123.0"
+
+[author]
+  name = "Spudlab"
+  homepage = "https://github.com/spudlab-xyz"
